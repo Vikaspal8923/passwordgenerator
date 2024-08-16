@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "style.css" rel="stylesheet">
+    <title>password-generator</title>
+</head>
+<body>
+            <h3>Password generator</h3>
+           <div class = "password1 ">
+
+                    <input  readonly type="text" id = "pass1">
+                    <button id  = "pass2"   >
+                       copy
+                    </button>
+           </div> 
+
+           <div class = "password2">
+
+                       <div id = "len1">
+                                  <p>password length</p>
+                                  <p id = "len1-1"></p>
+                       </div>   
+
+                       <div id = "len2">
+                                 <input type="range" min = "1" max = "20"  class = "slider" id = "myrange" step="1">
+                       </div>
+
+                        <div id = "check">
+ 
+                        <div id = "prelen3">
+                            <input type = "checkbox" id = "len3" >
+                            <label for = "len3">Include uppercase</label>
+                        </div>
+                       
+                      
+                            <div  id = "prelen4" >
+                                <input type = "checkbox" id = "len4" >
+                                <label for = "len4">Include lowercase</label>
+                            </div>
+                      
+                   
+                            <div   id = "prelen5" >
+                                <input type = "checkbox" id = "len5" >
+                                <label for = "len5">Include number</label>
+                            </div>
+                      
+
+
+                    </div>
+
+                       <div id = "strength">
+                               <p>strength</p>
+                               <span id = "color"></span>
+                       </div>
+
+                       <button id = "finalgenerate"> Generate Password</button>
+
+                       
+
+           </div>  
+           
+
+
+
+       <script src = "index.js"></script>
+</body>
+</html>
